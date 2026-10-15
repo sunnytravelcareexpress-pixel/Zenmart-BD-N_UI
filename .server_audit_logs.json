@@ -1,0 +1,1506 @@
+[
+  {
+    "id": "log-1791225800827-gfcpyv",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "test.promoted@gmail.com",
+    "description": "Super Admin changed role for test.promoted@gmail.com from \"customer\" to \"admin\"",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:43:20.827Z"
+  },
+  {
+    "id": "log-1791225413875-70vsh0",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_delete",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Deleted coupon PROMO2026",
+    "old_value": {
+      "code": "PROMO2026"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:53.875Z"
+  },
+  {
+    "id": "log-1791225413670-9edtk4",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_update",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Updated coupon discount value from 15 to 20",
+    "old_value": {
+      "code": "PROMO2026",
+      "discount_value": 15
+    },
+    "new_value": {
+      "discount_value": 20
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:53.670Z"
+  },
+  {
+    "id": "log-1791225413463-bk9ik2",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_create",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Created coupon PROMO2026 (15% off)",
+    "old_value": null,
+    "new_value": {
+      "code": "PROMO2026",
+      "discount_value": 15
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:53.463Z"
+  },
+  {
+    "id": "log-1791225413261-q6n5at",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_delete",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Deleted category \"Premium Audio\"",
+    "old_value": {
+      "name": "Premium Audio"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:53.261Z"
+  },
+  {
+    "id": "log-1791225413063-m5g1xo",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_update",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Updated category name",
+    "old_value": {
+      "name": "Hi-Fi Audio"
+    },
+    "new_value": {
+      "name": "Premium Audio"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:53.063Z"
+  },
+  {
+    "id": "log-1791225412482-7ta4t4",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_create",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Created category \"Hi-Fi Audio\"",
+    "old_value": null,
+    "new_value": {
+      "name": "Hi-Fi Audio",
+      "slug": "hifi-audio"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:52.482Z"
+  },
+  {
+    "id": "log-1791225412284-rnznh8",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "inventory_update",
+    "target_type": "inventory",
+    "target_id": "prod-gadget-01",
+    "description": "Adjusted stock from 10 to 45 units",
+    "old_value": {
+      "stock_quantity": 10
+    },
+    "new_value": {
+      "stock_quantity": 45
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:52.284Z"
+  },
+  {
+    "id": "log-1791225412087-owwiyy",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_delete",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Deleted product \"Ultra Wireless Mouse\"",
+    "old_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1450
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:52.087Z"
+  },
+  {
+    "id": "log-1791225411882-haossj",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_update",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Updated product price",
+    "old_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1250
+    },
+    "new_value": {
+      "price": 1450
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:51.882Z"
+  },
+  {
+    "id": "log-1791225411679-htoky6",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_create",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Created new product \"Ultra Wireless Mouse\"",
+    "old_value": null,
+    "new_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1250,
+      "stockCount": 25
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:51.679Z"
+  },
+  {
+    "id": "log-1791225411098-xxnoh8",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "order_status_update",
+    "target_type": "order",
+    "target_id": "ORD-987654",
+    "description": "Updated status of Order #ORD-987654 from \"Processing\" to \"Delivered\"",
+    "old_value": {
+      "status": "Processing"
+    },
+    "new_value": {
+      "status": "Delivered"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:51.098Z"
+  },
+  {
+    "id": "log-1791225410900-e7w85w",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "user-789@example.com",
+    "description": "Super Admin revoked admin to customer",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "customer"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:50.900Z"
+  },
+  {
+    "id": "log-1791225410698-5np5na",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "user-789@example.com",
+    "description": "Super Admin changed role from customer to admin",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:50.698Z"
+  },
+  {
+    "id": "log-1791225410500-rdhzun",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin signed out",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:50.500Z"
+  },
+  {
+    "id": "log-1791225410292-klfyau",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin logged in successfully",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:50.292Z"
+  },
+  {
+    "id": "log-1791225410252-rv74kp",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "customer1@test.com",
+    "description": "Super Admin changed role for customer1@test.com from \"admin\" to \"customer\"",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "customer"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:50.252Z"
+  },
+  {
+    "id": "log-1791225409853-roknmi",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "customer1@test.com",
+    "description": "Super Admin changed role for customer1@test.com from \"customer\" to \"admin\"",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:49.853Z"
+  },
+  {
+    "id": "log-1791225408502-v9qn8m",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "test.admin@zenmartbd.com",
+    "description": "Super Admin changed role for test.admin@zenmartbd.com from \"admin\" to \"admin\"",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:36:48.502Z"
+  },
+  {
+    "id": "log-1791225109639-lyxj3c",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_delete",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Deleted coupon PROMO2026",
+    "old_value": {
+      "code": "PROMO2026"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:49.639Z"
+  },
+  {
+    "id": "log-1791225109427-tqhvnj",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_update",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Updated coupon discount value from 15 to 20",
+    "old_value": {
+      "code": "PROMO2026",
+      "discount_value": 15
+    },
+    "new_value": {
+      "discount_value": 20
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:49.427Z"
+  },
+  {
+    "id": "log-1791225109212-lvyg6c",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_create",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Created coupon PROMO2026 (15% off)",
+    "old_value": null,
+    "new_value": {
+      "code": "PROMO2026",
+      "discount_value": 15
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:49.212Z"
+  },
+  {
+    "id": "log-1791225109006-67nr5m",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_delete",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Deleted category \"Premium Audio\"",
+    "old_value": {
+      "name": "Premium Audio"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:49.006Z"
+  },
+  {
+    "id": "log-1791225108801-aoo8va",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_update",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Updated category name",
+    "old_value": {
+      "name": "Hi-Fi Audio"
+    },
+    "new_value": {
+      "name": "Premium Audio"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:48.801Z"
+  },
+  {
+    "id": "log-1791225108594-9uid05",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_create",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Created category \"Hi-Fi Audio\"",
+    "old_value": null,
+    "new_value": {
+      "name": "Hi-Fi Audio",
+      "slug": "hifi-audio"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:48.595Z"
+  },
+  {
+    "id": "log-1791225108391-wcc3u0",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "inventory_update",
+    "target_type": "inventory",
+    "target_id": "prod-gadget-01",
+    "description": "Adjusted stock from 10 to 45 units",
+    "old_value": {
+      "stock_quantity": 10
+    },
+    "new_value": {
+      "stock_quantity": 45
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:48.391Z"
+  },
+  {
+    "id": "log-1791225108187-o35jpp",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_delete",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Deleted product \"Ultra Wireless Mouse\"",
+    "old_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1450
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:48.187Z"
+  },
+  {
+    "id": "log-1791225107983-89cjpz",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_update",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Updated product price",
+    "old_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1250
+    },
+    "new_value": {
+      "price": 1450
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:47.983Z"
+  },
+  {
+    "id": "log-1791225107774-a5t34w",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_create",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Created new product \"Ultra Wireless Mouse\"",
+    "old_value": null,
+    "new_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1250,
+      "stockCount": 25
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:47.774Z"
+  },
+  {
+    "id": "log-1791225107566-341b3j",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "order_status_update",
+    "target_type": "order",
+    "target_id": "ORD-987654",
+    "description": "Updated status of Order #ORD-987654 from \"Processing\" to \"Delivered\"",
+    "old_value": {
+      "status": "Processing"
+    },
+    "new_value": {
+      "status": "Delivered"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:47.566Z"
+  },
+  {
+    "id": "log-1791225107362-94fcxs",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "user-789@example.com",
+    "description": "Super Admin revoked admin to customer",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "customer"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:47.362Z"
+  },
+  {
+    "id": "log-1791225107155-ztzqew",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "user-789@example.com",
+    "description": "Super Admin changed role from customer to admin",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:47.155Z"
+  },
+  {
+    "id": "log-1791225106935-wuh42j",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin signed out",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:46.935Z"
+  },
+  {
+    "id": "log-1791225106723-xh4k03",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin logged in successfully",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:46.723Z"
+  },
+  {
+    "id": "log-1791225106675-3bf1ja",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "customer1@test.com",
+    "description": "Super Admin changed role for customer1@test.com from \"admin\" to \"customer\"",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "customer"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:46.675Z"
+  },
+  {
+    "id": "log-1791225106266-tyrisg",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "customer1@test.com",
+    "description": "Super Admin changed role for customer1@test.com from \"customer\" to \"admin\"",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:46.266Z"
+  },
+  {
+    "id": "log-1791225105610-554zqy",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "test.admin@zenmartbd.com",
+    "description": "Super Admin changed role for test.admin@zenmartbd.com from \"admin\" to \"admin\"",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:31:45.610Z"
+  },
+  {
+    "id": "log-1791224287151-cbpuos",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin logged in successfully (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:18:07.151Z"
+  },
+  {
+    "id": "log-1791224066387-tke8ns",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin logged in successfully (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:14:26.387Z"
+  },
+  {
+    "id": "log-1791223938322-ivajts",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_delete",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Deleted coupon PROMO2026",
+    "old_value": {
+      "code": "PROMO2026"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:18.322Z"
+  },
+  {
+    "id": "log-1791223938119-t37yvv",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_update",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Updated coupon discount value from 15 to 20",
+    "old_value": {
+      "code": "PROMO2026",
+      "discount_value": 15
+    },
+    "new_value": {
+      "discount_value": 20
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:18.119Z"
+  },
+  {
+    "id": "log-1791223937561-57zwfa",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_create",
+    "target_type": "coupon",
+    "target_id": "PROMO2026",
+    "description": "Created coupon PROMO2026 (15% off)",
+    "old_value": null,
+    "new_value": {
+      "code": "PROMO2026",
+      "discount_value": 15
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:17.561Z"
+  },
+  {
+    "id": "log-1791223937359-9gllax",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_delete",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Deleted category \"Premium Audio\"",
+    "old_value": {
+      "name": "Premium Audio"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:17.359Z"
+  },
+  {
+    "id": "log-1791223937159-gwcmnr",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_update",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Updated category name",
+    "old_value": {
+      "name": "Hi-Fi Audio"
+    },
+    "new_value": {
+      "name": "Premium Audio"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:17.159Z"
+  },
+  {
+    "id": "log-1791223936962-1dx7k3",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_create",
+    "target_type": "category",
+    "target_id": "cat-audio-99",
+    "description": "Created category \"Hi-Fi Audio\"",
+    "old_value": null,
+    "new_value": {
+      "name": "Hi-Fi Audio",
+      "slug": "hifi-audio"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:16.962Z"
+  },
+  {
+    "id": "log-1791223936771-e9d7hv",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "inventory_update",
+    "target_type": "inventory",
+    "target_id": "prod-gadget-01",
+    "description": "Adjusted stock from 10 to 45 units",
+    "old_value": {
+      "stock_quantity": 10
+    },
+    "new_value": {
+      "stock_quantity": 45
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:16.771Z"
+  },
+  {
+    "id": "log-1791223936568-i15bhi",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_delete",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Deleted product \"Ultra Wireless Mouse\"",
+    "old_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1450
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:16.568Z"
+  },
+  {
+    "id": "log-1791223936373-kmbaa1",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_update",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Updated product price",
+    "old_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1250
+    },
+    "new_value": {
+      "price": 1450
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:16.373Z"
+  },
+  {
+    "id": "log-1791223936172-3ld9cc",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_create",
+    "target_type": "product",
+    "target_id": "prod-new-123",
+    "description": "Created new product \"Ultra Wireless Mouse\"",
+    "old_value": null,
+    "new_value": {
+      "name": "Ultra Wireless Mouse",
+      "price": 1250,
+      "stockCount": 25
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:16.172Z"
+  },
+  {
+    "id": "log-1791223935603-m04fyi",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "order_status_update",
+    "target_type": "order",
+    "target_id": "ORD-987654",
+    "description": "Updated status of Order #ORD-987654 from \"Processing\" to \"Delivered\"",
+    "old_value": {
+      "status": "Processing"
+    },
+    "new_value": {
+      "status": "Delivered"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:15.603Z"
+  },
+  {
+    "id": "log-1791223935400-ovjnrs",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "user-789@example.com",
+    "description": "Super Admin revoked admin to customer",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "customer"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:15.400Z"
+  },
+  {
+    "id": "log-1791223935198-d88u3u",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "user-789@example.com",
+    "description": "Super Admin changed role from customer to admin",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:15.198Z"
+  },
+  {
+    "id": "log-1791223935003-aqgavf",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin signed out",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin"
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:15.003Z"
+  },
+  {
+    "id": "log-1791223934797-r8dqjj",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin logged in successfully",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:14.797Z"
+  },
+  {
+    "id": "log-1791223934745-eff1ww",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "customer1@test.com",
+    "description": "Super Admin changed role for customer1@test.com from \"admin\" to \"customer\"",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "customer"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:14.745Z"
+  },
+  {
+    "id": "log-1791223934003-tr9osv",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "customer1@test.com",
+    "description": "Super Admin changed role for customer1@test.com from \"customer\" to \"admin\"",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:14.003Z"
+  },
+  {
+    "id": "log-1791223933352-wgcj1q",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "test.admin@zenmartbd.com",
+    "description": "Super Admin changed role for test.admin@zenmartbd.com from \"customer\" to \"admin\"",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:12:13.352Z"
+  },
+  {
+    "id": "log-1791223882107-pn9r8q",
+    "admin_id": "admin-official-sunny-cloud-gmail-com",
+    "admin_email": "official.sunny.cloud@gmail.com",
+    "admin_name": "official.sunny.cloud",
+    "is_super_admin": false,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "admin-official-sunny-cloud-gmail-com",
+    "description": "Admin logged in successfully via credentials verification (official.sunny.cloud@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.cloud@gmail.com",
+      "role": "admin",
+      "is_super_admin": false
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:11:22.107Z"
+  },
+  {
+    "id": "log-1791223870004-9zjx82",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin signed out (official.sunny.ext@gmail.com)",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:11:10.004Z"
+  },
+  {
+    "id": "log-1791223830204-o6otch",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "customer",
+    "target_id": "official.sunny.cloud@gmail.com",
+    "description": "Super Admin modified role for official.sunny.cloud@gmail.com to \"ADMIN\"",
+    "old_value": {
+      "role": "customer"
+    },
+    "new_value": {
+      "role": "admin"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:10:30.204Z"
+  },
+  {
+    "id": "log-1791223824145-o12qqz",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "customer",
+    "target_id": "official.sunny.cloud@gmail.com",
+    "description": "Super Admin modified role for official.sunny.cloud@gmail.com to \"CUSTOMER\"",
+    "old_value": {
+      "role": "admin"
+    },
+    "new_value": {
+      "role": "customer"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:10:24.145Z"
+  },
+  {
+    "id": "log-1791223803784-6b2oji",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin logged in successfully (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:10:03.784Z"
+  },
+  {
+    "id": "log-1791223763485-owrvgc",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin signed out (official.sunny.ext@gmail.com)",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:09:23.485Z"
+  },
+  {
+    "id": "log-1791223727113-iyt3mn",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin logged in successfully (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:08:47.113Z"
+  },
+  {
+    "id": "log-1791223685935-5ft727",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin signed out (official.sunny.ext@gmail.com)",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:08:05.935Z"
+  },
+  {
+    "id": "log-1791223630474-492yr3",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin logged in successfully (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:07:10.474Z"
+  },
+  {
+    "id": "log-1791223595188-1dn8sx",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin signed out (official.sunny.ext@gmail.com)",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:06:35.188Z"
+  },
+  {
+    "id": "log-1791223562019-wia1bm",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin logged in successfully (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:06:02.019Z"
+  },
+  {
+    "id": "log-1791223488815-rb3b19",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin signed out (official.sunny.ext@gmail.com)",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:04:48.815Z"
+  },
+  {
+    "id": "log-1791223464329-bs3xyh",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Admin logged in successfully via credentials verification (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:04:24.329Z"
+  },
+  {
+    "id": "log-1791223356604-jg9bso",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_logout",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin signed out (official.sunny.ext@gmail.com)",
+    "old_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "new_value": null,
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T18:02:36.604Z"
+  },
+  {
+    "id": "log-1791218965223-z35toj",
+    "admin_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "094e2e5c-4c78-4c4c-895d-f25a2ca5c686",
+    "description": "Admin logged in successfully (official.sunny.ext@gmail.com)",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T16:49:25.223Z"
+  },
+  {
+    "id": "log-1791217898453-5ir5ii",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_create",
+    "target_type": "coupon",
+    "target_id": "ZENMART2026",
+    "description": "Created promotional coupon code \"ZENMART2026\" (15% discount)",
+    "old_value": null,
+    "new_value": {
+      "code": "ZENMART2026",
+      "discount_type": "percentage",
+      "discount_value": 15,
+      "minimum_order": 1000
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T16:31:38.453Z"
+  },
+  {
+    "id": "log-1791217898255-hyd1du",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "inventory_update",
+    "target_type": "inventory",
+    "target_id": "prod-smartwatch-ultra",
+    "description": "Adjusted stock quantity for Smart Watch Ultra Series 9",
+    "old_value": {
+      "stockCount": 15
+    },
+    "new_value": {
+      "stockCount": 60
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T16:31:38.255Z"
+  },
+  {
+    "id": "log-1791217898059-ny79hs",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "product_create",
+    "target_type": "product",
+    "target_id": "prod-earbuds-pro-max",
+    "description": "Created new product \"Wireless ANC Earbuds Pro Max\" (৳3,490 BDT)",
+    "old_value": null,
+    "new_value": {
+      "name": "Wireless ANC Earbuds Pro Max",
+      "price": 3490,
+      "stockCount": 45,
+      "category": "smart-gadgets"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T16:31:38.059Z"
+  },
+  {
+    "id": "log-1791217897479-6ykw9e",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "admin_login",
+    "target_type": "auth",
+    "target_id": "mother-admin-id",
+    "description": "Super Administrator authenticated via secure MFA terminal",
+    "old_value": null,
+    "new_value": {
+      "email": "official.sunny.ext@gmail.com",
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T16:31:37.479Z"
+  },
+  {
+    "id": "log-1791217879613-ethz1m",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "order_status_update",
+    "target_type": "order",
+    "target_id": "ZMB-88910",
+    "description": "Order status changed from Processing to Delivered",
+    "old_value": {
+      "status": "Processing"
+    },
+    "new_value": {
+      "status": "Delivered"
+    },
+    "ip_address": "103.145.118.42 (Dhaka Hub)",
+    "created_at": "2026-10-05T16:31:19.613Z"
+  },
+  {
+    "id": "log-sys-001",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "role_change",
+    "target_type": "role",
+    "target_id": "official.sunny.ext@gmail.com",
+    "description": "Super Administrator privilege established with immutable security definer",
+    "old_value": {
+      "role": "customer",
+      "is_super_admin": false
+    },
+    "new_value": {
+      "role": "admin",
+      "is_super_admin": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka, BD)",
+    "created_at": "2026-10-02T16:24:20.074Z"
+  },
+  {
+    "id": "log-sys-002",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "category_create",
+    "target_type": "category",
+    "target_id": "cat-gadgets-01",
+    "description": "Created primary category \"Smart Electronics & Gadgets\"",
+    "old_value": null,
+    "new_value": {
+      "name": "Smart Electronics & Gadgets",
+      "slug": "smart-gadgets",
+      "is_active": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka, BD)",
+    "created_at": "2026-10-03T16:24:20.074Z"
+  },
+  {
+    "id": "log-sys-003",
+    "admin_id": "mother-admin-id",
+    "admin_email": "official.sunny.ext@gmail.com",
+    "admin_name": "Super Administrator",
+    "is_super_admin": true,
+    "action": "coupon_create",
+    "target_type": "coupon",
+    "target_id": "ZENMART10",
+    "description": "Published storewide promotional coupon \"ZENMART10\" (10% discount)",
+    "old_value": null,
+    "new_value": {
+      "code": "ZENMART10",
+      "discount_type": "percentage",
+      "discount_value": 10,
+      "is_active": true
+    },
+    "ip_address": "103.145.118.42 (Dhaka, BD)",
+    "created_at": "2026-10-04T22:24:20.074Z"
+  }
+]

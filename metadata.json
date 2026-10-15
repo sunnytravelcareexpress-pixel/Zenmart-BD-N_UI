@@ -1,0 +1,6 @@
+{
+  "name": "ZenMart BD",
+  "description": "Modern Tech & Home Essentials in Bangladesh. Curated premium gadgets, workspace electronics, and Scandinavian home decor with 100% verified authenticity and Cash-on-Delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
