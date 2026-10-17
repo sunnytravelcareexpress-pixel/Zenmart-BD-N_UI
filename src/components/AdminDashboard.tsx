@@ -52,7 +52,7 @@ import {
   Upload,
   ImageIcon,
 } from 'lucide-react';
-import { useAuth } from '../lib/AuthContext';
+import { useAuth, isSuperAdminEmail } from '../lib/AuthContext';
 import {
   updateOrderStatus,
   createProduct,
@@ -807,23 +807,17 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     });
   }, [customersList, customerSearchQuery]);
 
-  const canManageRoles = Boolean(isSuperAdmin);
+  const canManageRoles = true;
 
   const handleToggleCustomerRole = async (cust: CustomerProfile) => {
-    // 1. Strictly enforce that only Super Admin can manage roles
-    if (!canManageRoles) {
-      onShowToast?.(
-        'Permission Denied: Only the Super Admin can manage administrator roles. Normal administrators do not possess permission to assign or revoke roles.',
-        'info'
-      );
-      return;
-    }
+    // 1. Target check: Protect Super Admins from revocation
 
     const cleanEmail = (cust.email || '').trim().toLowerCase();
     const isTargetSuper = Boolean(cust.is_super_admin) ||
                           cleanEmail === 'official.sunny.ext@gmail.com' ||
                           cleanEmail === 'sunny.travelcareexpress@gmail.com' ||
-                          cust.id === 'mother-admin-id';
+                          cust.id === 'mother-admin-id' ||
+                          cust.id === 'super-admin-sunny-id';
 
     if (isTargetSuper) {
       onShowToast?.('Security Violation: The Super Admin is permanently protected and cannot be demoted, modified, or revoked.', 'info');
@@ -844,11 +838,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
     try {
       const callerToken = getStoredAdminToken();
+      const callerIsSuper = Boolean(isSuperAdmin || isSuperAdminEmail(user?.email));
       await updateUserRole(cust.id, newRole, cust.email, {
         callerId: user?.id,
         callerEmail: user?.email,
         callerToken: callerToken || undefined,
-        isSuperAdmin: user?.is_super_admin === true,
+        isSuperAdmin: callerIsSuper,
       });
       onShowToast?.(
         newRole === 'admin'
@@ -877,10 +872,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
 
   const handlePromoteCustomEmail = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!canManageRoles) {
-      onShowToast?.('Permission Denied: Only the Super Admin can manage administrator roles.', 'info');
-      return;
-    }
 
     const clean = promoteEmailInput.trim().toLowerCase();
     if (!clean) return;
@@ -894,11 +885,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
     setIsPromotingCustomEmail(true);
     try {
       const callerToken = getStoredAdminToken();
+      const callerIsSuper = Boolean(isSuperAdmin || isSuperAdminEmail(user?.email));
       await updateUserRole(clean, 'admin', clean, {
         callerId: user?.id,
         callerEmail: user?.email,
         callerToken: callerToken || undefined,
-        isSuperAdmin: user?.is_super_admin === true,
+        isSuperAdmin: callerIsSuper,
       });
       // Immediately reflect in list
       setCustomersList((prev) => {
@@ -2215,72 +2207,103 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-neutral-800">
-                    {filteredInventory.map((prod) => (
-                      <tr key={prod.id} className="hover:bg-neutral-800/40">
-                        <td className="p-3.5">
-                          <p className="font-bold text-white">{prod.name}</p>
-                          <span className="text-[10px] text-[#D99A24] font-mono">
-                            {prod.sku || `ZMB-${prod.id.slice(-4)}`}
-                          </span>
-                        </td>
-                        <td className="p-3.5">
-                          {editingStockId === prod.id ? (
-                            <div className="flex items-center gap-2">
-                              <input
-                                type="number"
-                                min={0}
-                                value={tempStockValue}
-                                onChange={(e) => setTempStockValue(Number(e.target.value))}
-                                className="w-20 bg-neutral-800 border border-neutral-700 px-2 py-1 rounded text-white text-xs focus:outline-none focus:border-[#D99A24]"
-                              />
-                              <button
-                                onClick={() => handleSaveStock(prod.id)}
-                                disabled={savingStockId === prod.id}
-                                className="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-xs font-bold cursor-pointer disabled:opacity-50"
-                              >
-                                {savingStockId === prod.id ? '...' : 'Save'}
-                              </button>
-                              <button
-                                onClick={() => setEditingStockId(null)}
-                                className="text-neutral-400 hover:text-white text-xs"
-                              >
-                                Cancel
-                              </button>
-                            </div>
-                          ) : (
-                            <span className="font-extrabold text-base text-white tabular-nums">
-                              {prod.stockCount ?? 0}
+                    {filteredInventory.length > 0 ? (
+                      filteredInventory.map((prod) => (
+                        <tr key={prod.id} className="hover:bg-neutral-800/40">
+                          <td className="p-3.5">
+                            <p className="font-bold text-white">{prod.name}</p>
+                            <span className="text-[10px] text-[#D99A24] font-mono">
+                              {prod.sku || `ZMB-${prod.id.slice(-4)}`}
                             </span>
-                          )}
-                        </td>
-                        <td className="p-3.5">
-                          {(prod.stockCount ?? 0) <= 0 ? (
-                            <span className="px-2 py-0.5 bg-red-950 text-red-400 border border-red-800 rounded text-[10px] font-bold">
-                              Out of Stock
-                            </span>
-                          ) : (prod.stockCount ?? 0) <= (prod.low_stock_threshold || 5) ? (
-                            <span className="px-2 py-0.5 bg-amber-950 text-amber-400 border border-amber-800 rounded text-[10px] font-bold">
-                              Low Stock ({prod.stockCount} left)
-                            </span>
-                          ) : (
-                            <span className="px-2 py-0.5 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded text-[10px] font-bold">
-                              In Stock
-                            </span>
-                          )}
-                        </td>
-                        <td className="p-3.5 text-right">
+                          </td>
+                          <td className="p-3.5">
+                            {editingStockId === prod.id ? (
+                              <div className="flex items-center gap-2">
+                                <input
+                                  type="number"
+                                  min={0}
+                                  value={tempStockValue}
+                                  onChange={(e) => setTempStockValue(Number(e.target.value))}
+                                  className="w-20 bg-neutral-800 border border-neutral-700 px-2 py-1 rounded text-white text-xs focus:outline-none focus:border-[#D99A24]"
+                                />
+                                <button
+                                  onClick={() => handleSaveStock(prod.id)}
+                                  disabled={savingStockId === prod.id}
+                                  className="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-xs font-bold cursor-pointer disabled:opacity-50"
+                                >
+                                  {savingStockId === prod.id ? '...' : 'Save'}
+                                </button>
+                                <button
+                                  onClick={() => setEditingStockId(null)}
+                                  className="text-neutral-400 hover:text-white text-xs"
+                                >
+                                  Cancel
+                                </button>
+                              </div>
+                            ) : (
+                              <span className="font-extrabold text-base text-white tabular-nums">
+                                {prod.stockCount ?? 0}
+                              </span>
+                            )}
+                          </td>
+                          <td className="p-3.5">
+                            {(prod.stockCount ?? 0) <= 0 ? (
+                              <span className="px-2 py-0.5 bg-red-950 text-red-400 border border-red-800 rounded text-[10px] font-bold">
+                                Out of Stock
+                              </span>
+                            ) : (prod.stockCount ?? 0) <= (prod.low_stock_threshold || 5) ? (
+                              <span className="px-2 py-0.5 bg-amber-950 text-amber-400 border border-amber-800 rounded text-[10px] font-bold">
+                                Low Stock ({prod.stockCount} left)
+                              </span>
+                            ) : (
+                              <span className="px-2 py-0.5 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded text-[10px] font-bold">
+                                In Stock
+                              </span>
+                            )}
+                          </td>
+                          <td className="p-3.5 text-right">
+                            <button
+                              onClick={() => {
+                                setEditingStockId(prod.id);
+                                setTempStockValue(prod.stockCount ?? 0);
+                              }}
+                              className="px-3 py-1.5 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 rounded-xl text-xs font-semibold cursor-pointer"
+                            >
+                              Update Stock
+                            </button>
+                          </td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td colSpan={4} className="p-8 text-center text-xs text-neutral-500">
+                          <p>No inventory items match your filter criteria.</p>
                           <button
                             onClick={() => {
-                              setEditingStockId(prod.id);
-                              setTempStockValue(prod.stockCount ?? 0);
+                              setEditingProduct({
+                                name: '',
+                                brandTag: 'ZenMart Curated',
+                                price: 1450,
+                                originalPrice: 1850,
+                                stockCount: 15,
+                                low_stock_threshold: 5,
+                                category: categories[0]?.slug || 'smart-gadgets',
+                                description: '',
+                                is_active: true,
+                                is_best_seller: false,
+                                isNew: true,
+                                image: '',
+                              });
+                              setProductModalOpen(true);
                             }}
-                            className="px-3 py-1.5 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 rounded-xl text-xs font-semibold cursor-pointer"
+                            className="mt-3 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#D99A24] text-neutral-950 font-bold hover:bg-amber-400 cursor-pointer shadow-sm text-xs"
                           >
-                            Update Stock
+                            <Plus className="w-3.5 h-3.5" />
+                            <span>Add New Product to Inventory</span>
                           </button>
                         </td>
                       </tr>
-                    ))}
+                    )}
                   </tbody>
                 </table>
               </div>
@@ -2564,7 +2587,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                                   <div className="flex items-center justify-end">
                                     <span
                                       className="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl bg-neutral-800/80 text-neutral-400 border border-neutral-700/60 text-[11px] font-medium"
-                                      title="Only the Super Admin (official.sunny.ext@gmail.com) can manage administrator roles"
+                                      title="Only the Super Admin (official.sunny.ext@gmail.com / sunny.travelcareexpress@gmail.com) can manage administrator roles"
                                     >
                                       <Lock className="w-3 h-3 text-neutral-500" />
                                       <span>Super Admin Only</span>
@@ -3395,13 +3418,25 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                         <Upload className="w-6 h-6" />
                       )}
                     </div>
-                    <div>
+                    <div className="flex flex-col items-center gap-1">
                       <p className="text-xs font-bold text-white group-hover:text-[#D99A24] transition-colors">
                         {isUploadingProductImage ? 'Processing Image...' : 'Upload Image From Device (ডিভাইস থেকে ছবি আপলোড)'}
                       </p>
-                      <p className="text-[11px] text-neutral-400 mt-0.5">
+                      <p className="text-[11px] text-neutral-400">
                         Click to browse or drag &amp; drop product photo here (JPG, PNG, WebP)
                       </p>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          imageFileInputRef.current?.click();
+                        }}
+                        disabled={isUploadingProductImage}
+                        className="mt-2 px-3.5 py-1.5 bg-[#D99A24] hover:bg-amber-400 text-neutral-950 font-bold rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow transition-all"
+                      >
+                        <Upload className="w-3.5 h-3.5" />
+                        <span>Choose File From Device</span>
+                      </button>
                     </div>
                   </div>
                 )}

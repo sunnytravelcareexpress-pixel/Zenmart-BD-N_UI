@@ -179,7 +179,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   >
                     <ShieldCheck className="w-3.5 h-3.5" />
                     <span>
-                      {(user.email || '').trim().toLowerCase() === 'official.sunny.ext@gmail.com'
+                      {((user.email || '').trim().toLowerCase() === 'official.sunny.ext@gmail.com' ||
+                        (user.email || '').trim().toLowerCase() === 'sunny.travelcareexpress@gmail.com')
                         ? 'Super Admin (Mother Admin)'
                         : role === 'admin'
                         ? 'System Administrator'
@@ -189,7 +190,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 </div>
               </div>
 
-              {(role === 'admin' || (user.email || '').trim().toLowerCase() === 'official.sunny.ext@gmail.com') && onOpenAdmin && (
+              {(role === 'admin' ||
+                (user.email || '').trim().toLowerCase() === 'official.sunny.ext@gmail.com' ||
+                (user.email || '').trim().toLowerCase() === 'sunny.travelcareexpress@gmail.com') && onOpenAdmin && (
                 <button
                   type="button"
                   onClick={() => {
@@ -610,20 +613,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                       onChange={(e) => setPassword(e.target.value)}
                       className="w-full text-xs bg-neutral-50 border border-neutral-300 rounded-xl px-3.5 py-2.5 focus:bg-white focus:outline-none focus:border-[#D99A24]"
                     />
-                  </div>
-
-                  <div className="flex items-center justify-between text-[11px] pt-1 px-1">
-                    <span className="text-neutral-500">Super Admin Account:</span>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setEmail('official.sunny.ext@gmail.com');
-                        setPassword('superadmin123');
-                      }}
-                      className="text-[#D99A24] hover:underline font-bold cursor-pointer"
-                    >
-                      👑 Fill Super Admin
-                    </button>
                   </div>
 
                   <button
